@@ -160,3 +160,39 @@ a{
         bottom:40px;
     }
 }
+
+/* About Us Section */
+.about-us{
+    margin-top: 80px;
+    align-items:center;
+    display: flex;
+}
+
+.about-us img{
+    max-width:500px;
+}
+
+.about-container{
+    margin:0 60px;
+}
+
+.about-container h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+    color:#0a3d62;
+    display:block;
+}
+
+.about-container h2::after{
+    content: "";
+    display: block;
+    width:70px;
+    height:2px;
+    background-color: #ff0000;
+    margin-top: 10px;
+}
+
+.about-container p{
+    line-height: 1.7;
+    width:80%;
+}
