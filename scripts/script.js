@@ -2,7 +2,7 @@
 function loadScript() {
 	$.ajax({
 		type: "GET",
-		url: "https://maps.googleapis.com/maps/api/js?key=AIzaSyCMuYa6-f4Luel5vU8j2i2vK4cKREiyb8Q&callback=initMap",
+		url: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ6apCT_bhlnBNpUJxJ5_qVr4nHdL-FkQ&callback=initMap",
 		dataType: "script"
 	});
 }
