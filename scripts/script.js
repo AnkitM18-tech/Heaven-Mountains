@@ -1,4 +1,5 @@
-// Load google map
+// Load google map 
+//! (used this snippet from Leyla's codepen)
 function loadScript() {
 	$.ajax({
 		type: "GET",
@@ -228,5 +229,44 @@ $(function(){
         } else {
             btn.removeClass('hidden');
         }
+    });
+});
+
+// Hamburger Menu
+$(document).ready(function(){
+    // Hamburger Menu animation
+    $('.open-button').click(function(){
+        $(this).toggleClass('open');
+    });
+
+    // Menu Fade-In /Out on mobile
+
+    $('.open-button').click(function(e){
+        e.preventDefault();
+        $('.nav-menu').toggleClass('open');
+    });
+});
+
+$(document).ready(function(){
+    $('.nav-menu a').click(function(){
+        $('.nav-menu').toggleClass('open');
+        $('.open-button').removeClass('open');
+    });
+});
+
+
+// Smooth Scroll
+$(function(){
+    $('a[href*=\\#]:not([href=\\#])').click(function(){
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top-150
+          }, 800); // The number here represents the speed of the scroll in milliseconds
+          return false;
+        }
+      }
     });
 });

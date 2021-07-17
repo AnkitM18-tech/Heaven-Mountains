@@ -141,7 +141,7 @@ a{
     height:26px;
     text-align:center;
     margin-left: -13px;
-    z-index: 9999;
+    z-index: 9997;
     border:solid #fff;
     border-width:0 3px 3px 0;
     transform: rotate(45deg);
@@ -443,4 +443,62 @@ a{
 
 .hidden{
     display:none;
+}
+
+/* Mobile-menu */
+.open-button{
+    width:30px;
+    height:30px;
+    position:absolute;
+    cursor:pointer;
+    top:25px;
+    right:40px;
+    z-index: 9999;
+    border-bottom:0;
+}
+
+.open-button span{
+    display:block;
+    position:absolute;
+    height:3px;
+    width:100%;
+    background-color: #0a3d62;
+    border-radius:2px;
+    left:0;
+    opacity:1;
+    transform:rotate(0deg);
+    transition: all 0.25s ease-in-out;
+    display:none;
+}
+
+.open-button span:nth-child(1){
+    top:0;
+    transform-origin: left center;
+}
+
+.open-button span:nth-child(2){
+    top:10px;
+    transform-origin: left center;
+}
+
+.open-button span:nth-child(3){
+    top:20px;
+    transform-origin: left center;
+}
+
+.open-button.open span:nth-child(1){
+    transform:rotate(45deg);
+    top:-3px;
+    left:8px;
+}
+
+.open-button.open span:nth-child(2){
+    width:0;
+    opacity:0;
+}
+
+.open-button.open span:nth-child(3){
+    transform:rotate(-45deg);
+    top:19px;
+    left:8px;
 }

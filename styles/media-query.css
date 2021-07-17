@@ -99,11 +99,20 @@
         display:none;
     }
 
-    .open-button{
+    .open{
         display:flex;
         justify-content: center;
         align-items: center;
         flex-direction:column;
+    }
+
+    .open a{
+        font-size: 25px;
+        padding:15px;
+    }
+
+    .open-button span{
+        display:block;
     }
 
     .container{
