@@ -1,33 +1,180 @@
 /* Media Query */
 
 @media all and (max-width:1420px){
-    
+    .container{
+        padding:0 30px;
+    }
+
+    .centered-elements h1{
+        font-size: 39px;
+    }
+
+    .centered-elements a{
+        font-size: 18px;
+        padding:12px 30px;
+    }
+
+    .quote-section p{
+        font-size: 20px;
+    }
 }
 
 /* Only applicable to max-width:1200px */
 
 @media all and (max-width:1200px){
-    /* everything acceptable */
+    .centered-elements h1{
+        font-size: 32px;
+    }
+
+    .activity-container{
+        width:40%;
+        margin-bottom: 50px;
+    }
+
+    .activity-container:nth-child(3),.activity-container:nth-child(4){
+        margin-bottom: 0;
+    }
 }
 
 /* Only applicable to max-width:992px */
 
 @media all and (max-width:991px){
-   /* everything acceptable */
+    .centered-elements h1{
+        display:none;
+    }
+
+    .centered-elements a{
+        display:flex;
+        margin-top:0;
+    }
+
+    .nav-menu a{
+        margin:0 25px;
+    }
+
+    .about-us{
+        flex-direction:column;
+    }
+
+    .about-container h2{
+        font-size:30px;
+        margin:0 auto 20px auto;
+        width:80%;
+    }
+
+    .about-container p{
+        font-size:15px;
+        margin:0 auto 20px auto;
+    }
+
+    .quote-section p{
+        font-size: 17px;
+        text-align:center;
+    }
+
+    .gallery-section div{
+        flex:1 0 50%;
+    }
+
+    .contact-us{
+        left:50%;
+        transform:translate(-50%,-50%);
+        margin:0;
+        width:60%;
+    }
 }
 
 /* Only applicable to max-width:768px */
 
 @media all and (max-width:768px){
     /* can be done as above section */
-    
+    .nav-menu{
+        height:100vh;
+        width:100vw;
+        background-color: #fff;
+        position:fixed;
+        z-index:9998;
+        top:0;
+        left:0;
+        display:none;
+    }
+
+    .open-button{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+    }
+
+    .container{
+        padding:0 10px;
+    }
+
+    .about-container{
+        margin:0 20px;
+    }
+
+    .about-us img{
+        width:90%;
+    }
+
+    .activity-container{
+        width:90%;
+    }
+
+    .activity-container:nth-child(3){
+        margin-bottom: 50px;
+    }
+
+    .gallery-section div{
+        flex:1 0 100%;
+    }
+
+    .contact-us{
+        width:90%;
+    }
 }
 
 /* Only applicable to max-width:480px */
 
 @media all and (max-width:480px){
     /* can be done as above section */
-    
+    .about-us{
+        margin-top: 40px;
+    }
+
+    .about-container p{
+        width:95%;
+    }
+
+    .quote-section p{
+        margin:0 10px;
+    }
+
+    .activities{
+        justify-content: center;
+        margin:70px 0;
+    }
+
+    .contact-us{
+        padding:15px;
+    }
+
+    .contact-us p{
+        font-size: 15px;
+    }
+
+    .contact-us form label{
+        margin-bottom: 4px;
+        margin-top:15px;
+        font-size: 16px;
+    }
+
+    .contact-us form button{
+        margin-top:20px;
+        margin-left:auto;
+        margin-right:auto;
+    }
 }
 
 
