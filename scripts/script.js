@@ -190,7 +190,7 @@ function initMap() {
 
     if($(window).width() > 810 ){
         var ardorPin = {
-            url: '../image/maps-image.png'
+            url: '../images/maps-image.png'
         };
 
     }
