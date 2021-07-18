@@ -502,3 +502,17 @@ a{
     top:19px;
     left:8px;
 }
+
+/* Footer Section */
+
+footer{
+    background-color: #fff;
+    color:#0a3d62;
+    margin-top:10px;
+}
+
+footer p{
+    text-align:center;
+    padding:20px;
+    font-size: 20px;
+}
